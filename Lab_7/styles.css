@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.header-info p {
+    margin: 3px 0;
+    font-size: 1rem;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Подвал */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+footer p {
+    margin: 5px 0;
+}
+
+/* Элементы формы */
+table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+td {
+    padding: 5px;
+}
+.element_row input {
+    width: 200px;
+    padding: 5px;
+}
+.button-row {
+    margin-top: 12px;
+}
+input[type="button"], input[type="submit"], .back-link {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+input[type="button"]:hover, input[type="submit"]:hover, .back-link:hover {
+    background-color: #0055aa;
+}
+select {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* Отображение процесса сортировки */
+.iteration {
+    background-color: #eef;
+    border-left: 4px solid #003366;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-family: monospace;
+}
+.initial, .result {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.error-box {
+    background-color: #ffe0e0;
+    border-left: 4px solid red;
+    padding: 15px;
+}
