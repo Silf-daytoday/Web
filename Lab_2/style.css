@@ -1,0 +1,151 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    background-color: #003366; /* тёмно-синий */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+header .logo img {
+    border-radius: 5px;
+}
+
+.header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.header-info p {
+    margin: 3px 0;
+    font-size: 1rem;
+}
+
+/* Основной блок */
+main {
+    flex: 1;
+    background-color: #f9f9f9; /* светло-серый */
+    color: #000;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Подвал */
+footer {
+    background-color: #222; /* тёмно-серый */
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Стили для типа A (строки) */
+.result-text {
+    font-family: monospace;
+    line-height: 1.6;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+/* Стили для типов B и C (списки) */
+.result-list {
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.result-list li {
+    margin: 5px 0;
+    font-family: monospace;
+}
+
+/* Стили для типа D (таблица) */
+.result-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #ddd;
+}
+
+/* Стили для типа E (блоки) */
+.result-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.block {
+    border: 2px solid red;
+    padding: 8px 12px;
+    background-color: #fff5f5;
+    font-family: monospace;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Статистика */
+.statistics {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    border-left: 4px solid #003366;
+}
+
+.statistics ul {
+    margin: 10px 0 0 20px;
+}
