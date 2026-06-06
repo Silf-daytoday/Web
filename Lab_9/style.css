@@ -1,0 +1,206 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* Шапка с логотипом (как в предыдущих лабах) */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.header-info p {
+    margin: 3px 0;
+    font-size: 1rem;
+}
+/* Главное меню (горизонтальное) */
+#main_menu {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#main_menu a {
+    display: inline-block;
+    background-color: #3366cc;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+#main_menu a.active {
+    background-color: #cc3333;
+}
+#main_menu a:hover {
+    background-color: #224499;
+}
+/* Подменю сортировки */
+#submenu {
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#submenu a {
+    display: inline-block;
+    background-color: #6699cc;
+    color: white;
+    padding: 5px 12px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+#submenu a.active {
+    background-color: #cc3333;
+}
+/* Контент – занимает всё свободное место */
+#content {
+    padding: 20px;
+    flex: 1;
+}
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #aaa;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #e0e0e0;
+}
+/* Пагинация */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    background-color: #f9f9f9;
+}
+.pagination a:hover {
+    border: 2px solid #333;
+    background-color: #e0e0e0;
+}
+.pagination span {
+    background-color: #cc3333;
+    color: white;
+    border: 1px solid #cc3333;
+}
+/* Формы */
+.form-row {
+    margin-bottom: 10px;
+}
+.form-row label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    vertical-align: top;
+}
+.form-row input, .form-row select, .form-row textarea {
+    width: 300px;
+    padding: 4px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+.form-row input[type="submit"] {
+    width: auto;
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+.form-row input[type="submit"]:hover {
+    background-color: #224499;
+}
+/* Списки редактирования и удаления */
+.edit-list, .delete-list {
+    float: right;
+    width: 220px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+.edit-list a, .delete-list a {
+    display: block;
+    text-decoration: none;
+    color: #003366;
+    padding: 3px;
+}
+.edit-list strong, .delete-list strong {
+    display: block;
+    background-color: #e0e0e0;
+    padding: 3px;
+}
+/* Сообщения */
+.success {
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+}
+/* Подвал приклеен к низу */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9em;
+    margin-top: auto;
+}
