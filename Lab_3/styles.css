@@ -1,0 +1,137 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+header .logo img {
+    border-radius: 5px;
+}
+
+.header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.header-info p {
+    margin: 3px 0;
+    font-size: 1rem;
+}
+
+/* Основной блок */
+main {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Клавиатура */
+.keyboard {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 430px;          /* 390px (5 кнопок + отступы) + 40px на горизонтальные padding */
+    margin: 0 auto;
+}
+
+/* Окно результата – белый фон, без скругления */
+.display {
+    background-color: white;
+    border: 2px solid #888;
+    border-radius: 0;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+    min-height: 4rem;
+    word-wrap: break-word;
+}
+
+/* Ряд с кнопками */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+/* Общий стиль кнопок (цифры и сброс) */
+.key {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #f0f0f0;
+    border: 2px solid #888;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.key:hover {
+    background-color: #d0d0d0;
+    border-color: #555;
+}
+
+/* Кнопка сброс – та же стилистика, но ширина на всю строку */
+.reset-row .key {
+    width: 100%;           /* занимает всю доступную ширину родителя */
+}
+
+/* Подвал */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
