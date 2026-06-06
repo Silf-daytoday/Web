@@ -1,0 +1,154 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Шапка */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+}
+.header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.header-info p {
+    margin: 3px 0;
+}
+main {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Стили формы */
+.test-form {
+    width: 100%;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-row label {
+    width: 200px;
+    font-weight: bold;
+}
+.form-row input:not([type="checkbox"]),
+.form-row textarea,
+.form-row select {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.checkbox-row {
+    justify-content: flex-start;
+}
+.checkbox-row input {
+    width: auto;
+    margin-right: 10px;
+}
+.button-row {
+    justify-content: center;
+    margin-top: 20px;
+}
+.submit-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.submit-btn:hover {
+    background-color: #0055aa;
+}
+
+/* Отчёт */
+.report {
+    line-height: 1.5;
+}
+.report p {
+    margin: 8px 0;
+}
+.success {
+    color: green;
+    font-weight: bold;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+.warning {
+    color: orange;
+}
+.repeat-link {
+    text-align: center;
+    margin-top: 25px;
+}
+.repeat-btn {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #003366;
+}
+.repeat-btn:hover {
+    background-color: #0055aa;
+    cursor: pointer;
+}
+
+/* Режимы отображения */
+.browser-mode main {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.print-mode main {
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid #000;
+}
+.print-mode .repeat-btn {
+    display: none;
+}
